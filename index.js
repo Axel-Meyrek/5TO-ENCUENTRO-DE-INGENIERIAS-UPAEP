@@ -48,7 +48,3 @@ const renderCharlas = (e) => {
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
 document.addEventListener('DOMContentLoaded', consumirDatos);
-
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });

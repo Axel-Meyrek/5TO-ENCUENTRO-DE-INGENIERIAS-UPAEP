@@ -80,6 +80,24 @@ p, button{
 }
 
 
+/* POINTS */
+
+.points{
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.points_item{
+    color: var(--colorEnfasis);
+    text-shadow: 0 0 10px var(--colorEnfasis);
+    font-size: 2rem;
+}
+
+
 /* NAVEGACIÓN */
 .navegacion{
     display: flex;
@@ -313,4 +331,94 @@ p, button{
     padding: 1em;
     background-color: #16171A;
     border-radius: var(--radiusBig);
+}
+
+
+
+/* PREGUNTAS FRECUENTES */
+
+
+.preguntasFrecuentes{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 100px;
+}
+
+.preguntas_title{
+    font-size: var(--fontSubtitle);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.preguntas_description{
+    text-align: center;
+}
+
+details{
+    width: 100%;
+    text-align: start;
+    background-color: #0F1011;
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+details:hover summary{
+    color: #EA374C;
+    text-decoration: underline;
+}
+
+summary{
+    font-weight: var(--bold);
+    transition-duration: .3s;
+    transition-property: color, text-decoration;
+}
+
+.response{
+    padding-top: 1em;
+}
+
+.map{
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+    align-items: center;
+    background-color: var(--colorEnfasis);
+    padding: 2em 0;
+}
+
+.footer_description{
+    color: var(--colorBackgroundButtons);
+    font-weight: var(--bold);
+    max-width: 400px;
+    text-align: center;
+}
+
+.footer_redes{
+    display: flex;
+    gap: 2em;
+}
+
+.iconRedes{
+    color: var(--colorDark);
+    font-size: 1.8rem;
+    transition-duration: .3s;
+    transition-property: scale;
+}
+
+.iconRedes:hover{
+    scale: 1.2;
 }
