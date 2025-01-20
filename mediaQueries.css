@@ -1,0 +1,24 @@
+@media (width < 540px) {
+    .navegacion_container{
+        display: none;
+    }
+
+    .bienvenida_botonera{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .bienvenida_description{
+        width: 80%;
+    }
+
+    .bienvenida_redirecciones{
+        max-width: none;
+        width: 90%;
+    }
+
+    /* PROGRAMA */
+    .programa_description{
+        width: 80%;
+    }
+}
