@@ -4,6 +4,9 @@ let charlas = [];
 const $buttonDias = document.querySelectorAll('.programa_button');
 
 const $charlas = document.querySelector('#charlas');
+
+
+
 /* FUNCIONES */
 const addEventButtons = () => {
     $buttonDias.forEach(button => button.addEventListener('click', renderCharlas));
@@ -37,7 +40,15 @@ const renderCharlas = (e) => {
 
 
 }
+
+
+
+
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
 document.addEventListener('DOMContentLoaded', consumirDatos);
+
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
