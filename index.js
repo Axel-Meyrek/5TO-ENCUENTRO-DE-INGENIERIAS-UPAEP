@@ -19,7 +19,7 @@ const renderCharlas = (e) => {
     const diaSeleccionado = e.target.textContent;
     
     const charlasSeleccionadas = charlas.filter(charla => charla.dia === diaSeleccionado);
-    
+
     $charlas.innerHTML = '';
     charlasSeleccionadas.forEach(charla => {
         const $charla = /* html */
@@ -27,7 +27,7 @@ const renderCharlas = (e) => {
                     <p class="charlas_hora">${charla.hora}</p>
                     <h3 class="charlas_title">${charla.titulo}</h3>
                     <h4 class="charlas_ponente">${charla.ponente}</h4>
-                    <p class="charlas_subtitle">Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP</p>
+                    <p class="charlas_subtitle">${charla.subtitulo}</p>
                     <p class="charlas_description">${charla.descripcion}</p>
                     <p class="charlas_ubicacion">📍 ${charla.ubicacion}</p>
                 </article>`;
