@@ -1,3 +1,15 @@
+@media (width < 620px) {
+    .programa_container{
+        flex-direction: column;
+    }
+
+    .charlas{
+        width: 100%;
+    }
+}
+
+
+
 @media (width < 540px) {
     .navegacion_container{
         display: none;
