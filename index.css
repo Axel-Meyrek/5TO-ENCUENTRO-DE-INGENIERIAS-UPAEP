@@ -278,6 +278,13 @@ p, button{
     scale: 1.1;
 }
 
+.buttonActive{
+    background-color: var(--colorEnfasis);
+    box-shadow: 0 0 10px var(--colorEnfasis);
+    border-color: var(--colorEnfasis);
+    scale: 1.1;
+}
+
 .programa_container{
     display: flex;
     justify-content: center;

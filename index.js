@@ -19,14 +19,16 @@ const consumirDatos = async () => {
 }
 
 const renderCharlas = (e) => {
+    desactiveAllButtons();
+    e.target.classList.add('buttonActive');
     const diaSeleccionado = e.target.textContent;
-    
+
     const charlasSeleccionadas = charlas.filter(charla => charla.dia === diaSeleccionado);
 
     $charlas.innerHTML = '';
     charlasSeleccionadas.forEach(charla => {
         const $charla = /* html */
-                ` <article class="charlas">
+            ` <article class="charlas">
                     <p class="charlas_hora">${charla.hora}</p>
                     <h3 class="charlas_title">${charla.titulo}</h3>
                     <h4 class="charlas_ponente">${charla.ponente}</h4>
@@ -36,11 +38,12 @@ const renderCharlas = (e) => {
                 </article>`;
 
         $charlas.innerHTML += $charla;
-})
-
-
+    });
 }
 
+const desactiveAllButtons = () => {
+    $buttonDias.forEach(button => button.classList.remove('buttonActive'));
+}
 
 
 
