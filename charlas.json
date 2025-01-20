@@ -1,0 +1,202 @@
+{"charlas": [
+  {
+    "id": 1,
+    "dia": "Lunes",
+    "hora": "09:00 AM",
+    "titulo": "Inauguración del Evento",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Emilio José Baños Ardavín",
+    "descripcion": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP. \u00danete a nosotros en este momento especial donde daremos inicio oficial a nuestro evento anual, marcando el comienzo de dos días llenos de innovación y conocimiento.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 2,
+    "dia": "Lunes",
+    "hora": "10:30 AM",
+    "titulo": "Introducción a la Robótica",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Ana Laura Torres",
+    "descripcion": "Un recorrido por los conceptos básicos de la robótica y sus aplicaciones actuales.",
+    "ubicacion": "Sala de Conferencias 2"
+  },
+  {
+    "id": 3,
+    "dia": "Lunes",
+    "hora": "12:00 PM",
+    "titulo": "Ciberseguridad en la Industria 4.0",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Miguel Hernández",
+    "descripcion": "Aspectos clave para proteger sistemas industriales en un entorno cada vez más digitalizado.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 4,
+    "dia": "Lunes",
+    "hora": "03:00 PM",
+    "titulo": "Tendencias en Energías Renovables",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dra. Sofía Martínez",
+    "descripcion": "Exploración de los avances tecnológicos en energías limpias y sostenibles.",
+    "ubicacion": "Sala de Conferencias 1"
+  },
+  {
+    "id": 5,
+    "dia": "Martes",
+    "hora": "09:00 AM",
+    "titulo": "Taller de Innovación Tecnológica",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. María Fernanda López",
+    "descripcion": "Explora herramientas y técnicas para desarrollar soluciones tecnológicas innovadoras que impacten en la industria.",
+    "ubicacion": "Sala de Talleres 1"
+  },
+  {
+    "id": 6,
+    "dia": "Martes",
+    "hora": "10:30 AM",
+    "titulo": "Desarrollo de Software para IoT",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Juan Pérez",
+    "descripcion": "Conceptos y herramientas para desarrollar software en el área del Internet de las cosas.",
+    "ubicacion": "Sala de Talleres 2"
+  },
+  {
+    "id": 7,
+    "dia": "Martes",
+    "hora": "12:00 PM",
+    "titulo": "Optimización de Procesos Industriales",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Carolina Suárez",
+    "descripcion": "Técnicas avanzadas para mejorar la eficiencia en entornos industriales.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 8,
+    "dia": "Martes",
+    "hora": "03:00 PM",
+    "titulo": "Tecnologías Emergentes en Inteligencia Artificial",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Luis García",
+    "descripcion": "Explora cómo las nuevas tecnologías están transformando la IA y sus aplicaciones.",
+    "ubicacion": "Sala de Conferencias 1"
+  },
+  {
+    "id": 9,
+    "dia": "Miércoles",
+    "hora": "09:00 AM",
+    "titulo": "Introducción al Big Data",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Rodrigo Vargas",
+    "descripcion": "Aprende los fundamentos del Big Data y su aplicación en la resolución de problemas reales.",
+    "ubicacion": "Sala de Talleres 1"
+  },
+  {
+    "id": 10,
+    "dia": "Miércoles",
+    "hora": "10:30 AM",
+    "titulo": "Modelado y Simulación Computacional",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dra. Alejandra Morales",
+    "descripcion": "Descubre cómo el modelado y la simulación ayudan en el diseño y optimización de sistemas.",
+    "ubicacion": "Sala de Conferencias 2"
+  },
+  {
+    "id": 11,
+    "dia": "Miércoles",
+    "hora": "12:00 PM",
+    "titulo": "Panel de Expertos: Futuro de las Ingenierías",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Varios Ponentes",
+    "descripcion": "Un espacio para debatir sobre las tendencias y desafíos que enfrentarán las ingenierías en los próximos años.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 12,
+    "dia": "Miércoles",
+    "hora": "03:00 PM",
+    "titulo": "Aplicaciones de la Ciencia de Datos",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Felipe Martínez",
+    "descripcion": "Estudio de casos prácticos donde la ciencia de datos ha transformado industrias.",
+    "ubicacion": "Sala de Conferencias 1"
+  },
+  {
+    "id": 13,
+    "dia": "Jueves",
+    "hora": "09:00 AM",
+    "titulo": "Conferencia Magistral: Inteligencia Artificial Aplicada",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Carlos Ramírez Ortega",
+    "descripcion": "Descubre las aplicaciones más recientes de la inteligencia artificial en diversos campos de la ingeniería y la tecnología.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 14,
+    "dia": "Jueves",
+    "hora": "10:30 AM",
+    "titulo": "Automatización en la Industria Moderna",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Patricia Herrera",
+    "descripcion": "Implementación de sistemas automáticos para mejorar la productividad y calidad en la industria.",
+    "ubicacion": "Sala de Conferencias 2"
+  },
+  {
+    "id": 15,
+    "dia": "Jueves",
+    "hora": "12:00 PM",
+    "titulo": "Diseño de Sistemas Embebidos",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Manuel López",
+    "descripcion": "Principios y mejores prácticas en el diseño de sistemas embebidos para la industria.",
+    "ubicacion": "Sala de Talleres 1"
+  },
+  {
+    "id": 16,
+    "dia": "Jueves",
+    "hora": "03:00 PM",
+    "titulo": "Blockchain y su Impacto en la Ingeniería",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dra. Laura Castillo",
+    "descripcion": "Explora cómo la tecnología blockchain está transformando sectores como la ingeniería y la manufactura.",
+    "ubicacion": "Sala de Conferencias 1"
+  },
+  {
+    "id": 17,
+    "dia": "Viernes",
+    "hora": "09:00 AM",
+    "titulo": "Técnicas de Prototipado Rápido",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Ricardo Salinas",
+    "descripcion": "Conoce las herramientas más utilizadas para la creación de prototipos funcionales en tiempo récord.",
+    "ubicacion": "Sala de Talleres 2"
+  },
+  {
+    "id": 18,
+    "dia": "Viernes",
+    "hora": "10:30 AM",
+    "titulo": "Metodologías Ágiles en Proyectos de Ingeniería",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Ing. Valeria Rojas",
+    "descripcion": "Implementación de metodologías ágiles para la gestión eficiente de proyectos.",
+    "ubicacion": "Sala de Conferencias 2"
+  },
+  {
+    "id": 19,
+    "dia": "Viernes",
+    "hora": "12:00 PM",
+    "titulo": "Nanotecnología en Materiales Avanzados",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Dr. Jorge Pérez",
+    "descripcion": "Aplicaciones de la nanotecnología en el desarrollo de nuevos materiales para la industria.",
+    "ubicacion": "Auditorio Principal"
+  },
+  {
+    "id": 20,
+    "dia": "Viernes",
+    "hora": "03:00 PM",
+    "titulo": "Clausura y Premiación",
+    "subtitulo": "Ceremonia de apertura del 5to Encuentro de Ingenierías UPAEP",
+    "ponente": "Mtro. Luis Alberto Pérez",
+    "descripcion": "Cierre del evento con un resumen de los logros alcanzados y la premiación a los mejores proyectos presentados.",
+    "ubicacion": "Auditorio Principal"
+  }
+]}

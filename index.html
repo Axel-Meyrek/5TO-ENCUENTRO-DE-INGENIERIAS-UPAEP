@@ -19,8 +19,8 @@
         <h2 class="navegacion_subtitle">UPAEP</h2>
 
         <nav class="navegacion_container">
-            <a class="navegacion_item" href="">Inicio</a>
-            <a class="navegacion_item" href="">Programa</a>
+            <a class="navegacion_item" href="#inicio">Inicio</a>
+            <a class="navegacion_item" href="#programa">Programa</a>
             <a class="navegacion_item" href="">Actividades</a>
             <a class="navegacion_item" href="">Preguntas</a>
         </nav>
@@ -30,51 +30,51 @@
 
     <main>
         <!-- BIENVENIDA -->
-        <section class="bienvenida">
+        <section id="inicio" class="bienvenida">
             <h1 class="bienvenida_title">5to Encuentro de <br> <span>Ingenierias UPAEP</span></h1>
             <p class="bienvenida_description">Este evento es una oportunidad para aprender de líderes en la industria y adentrarte en la emocionante y siempre cambiante disciplina de la ingeniería.</p>
             
             <div class="bienvenida_flex">
                 <div class="reloj">
-                    <p class="reloj_tiempo">00</p>
+                    <p id="dias" class="reloj_tiempo">00</p>
                     <p class="reloj_description">Días</p>
                 </div>
                 <div class="reloj">
-                    <p class="reloj_tiempo">00</p>
+                    <p id="horas" class="reloj_tiempo">00</p>
                     <p class="reloj_description">Horas</p>
                 </div>
                 <div class="reloj">
-                    <p class="reloj_tiempo">00</p>
+                    <p id="minitos" class="reloj_tiempo">00</p>
                     <p class="reloj_description">Minutos</p>
                 </div>
                 <div class="reloj">
-                    <p class="reloj_tiempo">00</p>
+                    <p id="segundos" class="reloj_tiempo">00</p>
                     <p class="reloj_description">Segundos</p>
                 </div>
             </div>
     
             <nav class="bienvenida_botonera">
                 <a class="bienvenida_redirecciones" href="">Registrarme Ahora</a>
-                <a class="bienvenida_redirecciones bienvenida_redirecciones--fondo" href="">Ver Programa</a>
+                <a class="bienvenida_redirecciones bienvenida_redirecciones--fondo" href="#programa">Ver Programa</a>
             </nav>
     
         </section>
 
 
         <!-- PROGRAMA -->
-        <section class="programa">
+        <section id="programa" class="programa">
             <h2 class="programa_title">Programa del evento</h2>
             <p class="programa_description">Escucha a expertos compartir sus conocimientos sobre las últimas tendencias y avances en el mundo de la ingeniería.</p>
 
             <div class="programa_botonera">
                 <button class="programa_button">Lunes</button>
                 <button class="programa_button">Martes</button>
-                <button class="programa_button">Miercoles</button>
+                <button class="programa_button">Miércoles</button>
                 <button class="programa_button">Jueves</button>
                 <button class="programa_button">Viernes</button>
             </div>
 
-            <div class="programa_container">
+            <div id="charlas" class="programa_container">
                 <article class="charlas">
                     <p class="charlas_hora">09:00 AM</p>
                     <h3 class="charlas_title">Inauguración del Evento</h3>
