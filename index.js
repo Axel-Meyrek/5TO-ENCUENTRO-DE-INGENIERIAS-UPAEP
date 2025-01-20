@@ -25,14 +25,16 @@ const renderCharlas = (e) => {
     if(e == undefined){
         diaSeleccionado = 'Lunes';
     }else{
-        diaSeleccionado = e.target.textContent;
         desactiveAllButtons();
+        e.target.classList.add('buttonActive');
+        diaSeleccionado = e.target.textContent;
+
     }
 
     const charlasSeleccionadas = charlas.filter(charla => charla.dia === diaSeleccionado);
 
     $charlas.innerHTML = '';
-    
+
     charlasSeleccionadas.forEach(charla => {
         /* DESECTRUCTURACIÓN */
         const {hora, titulo, ponente, subtitulo, descripcion, ubicacion} = charla;
