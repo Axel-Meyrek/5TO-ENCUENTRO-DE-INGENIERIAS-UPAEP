@@ -60,41 +60,32 @@ const renderCharlas = (e) => {
     });
 }
 
-/* const calcularTiempoPasado = () => {
-    const fechaReferencia = new Date('2023-10-07T00:00:00');
+const tiempoFaltante = () => {
+    const ahora = new Date();
+    const objetivo = new Date("2025-03-11T07:00:00");
+    const diferencia = objetivo - ahora;
 
-    const fechaActual = new Date();
-    const diferencia = fechaActual - fechaReferencia;
+    if (diferencia <= 0) return;
 
-    // Convertir la diferencia de milisegundos a meses, días, horas, minutos y segundos
-    let segundos = Math.floor(diferencia / 1000);
-    let minutos = Math.floor(segundos / 60);
-    let horas = Math.floor(minutos / 60);
-    let dias = Math.floor(horas / 24);
-
-    // Calcular los segundos restantes después de calcular los meses, días, horas y minutos
-    const segundosRestantes = segundos % 60;
-
-    dias = Math.floor(dias % 30.436875) // Resto de días
-    horas = horas % 24
-    minutos = minutos % 60
-    segundos = segundosRestantes
+    const segundos = Math.floor(diferencia / 1000);
+    const minutos = Math.floor(segundos / 60);
+    const horas = Math.floor(minutos / 60);
+    const dias = Math.floor(horas / 24);
 
     $dias.textContent = dias;
-    $horas.textContent = horas;
-    $minutos.textContent = minutos;
-    $segundos.textContent = segundos;
-}
+    $horas.textContent = horas % 24;
+    $minutos.textContent = minutos % 60;
+    $segundos.textContent = segundos % 60;
+};
 
-const iniciarContador = () => {
-    setTimeout
-}
- */
-
-
+const renderTime = () => {
+    setInterval(tiempoFaltante, 1000);
+};
 
 
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
 document.addEventListener('DOMContentLoaded', consumirDatos);
+
+document.addEventListener('DOMContentLoaded', renderTime)
