@@ -11,6 +11,15 @@
 }
 
 
+@media (width < 600px) {
+    .programa_botonera{
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: 0px;
+    }
+}
+
+
 
 @media (width < 540px) {
     .navegacion_container{
