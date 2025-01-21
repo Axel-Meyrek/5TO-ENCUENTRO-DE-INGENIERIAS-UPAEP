@@ -79,6 +79,11 @@ p, button{
     font-size: clamp(0.75rem, 0.6590909090909091rem + 0.45454545454545453vw, 1rem);
 }
 
+u{
+    text-decoration: underline;
+    text-shadow: 5px 5px 10px black;
+}
+
 
 /* POINTS */
 
