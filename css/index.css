@@ -259,6 +259,7 @@ p, button{
     gap: 2em;
     overflow-x: auto;
     padding: 1em;
+    scrollbar-width: none;
 }
 
 .programa_button{
