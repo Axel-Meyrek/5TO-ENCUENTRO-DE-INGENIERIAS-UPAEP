@@ -257,8 +257,8 @@ p, button{
 .programa_botonera{
     display: flex;
     gap: 2em;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    padding: 1em;
 }
 
 .programa_button{
