@@ -1,9 +1,9 @@
 particlesJS({particles: {
   number: {
-    value: 5,
+    value: 30,
     density: {
       enable: true,
-      value_area: 1000
+      value_area: 500
     }
   },
   color: {
@@ -35,7 +35,7 @@ particlesJS({particles: {
     }
   },
   size: {
-    value: 100,
+    value: 20,
     random: false,
     anim: {
       enable: false,
@@ -45,7 +45,7 @@ particlesJS({particles: {
     }
   },
   line_linked: {
-    enable: true,
+    enable: false,
     distance: 100,
     color: '#fff',
     opacity: 1,
