@@ -21,6 +21,7 @@ const addEventButtons = () => $buttonDias.forEach(button => button.addEventListe
 const desactiveAllButtons = () => $buttonDias.forEach(button => button.classList.remove('buttonActive'));
 
 const consumirDatos = async () => {
+    /* ESTA ES UNA FUNCIÓN DE PRUEBA */
     const response = await fetch('../charlas.json');
     const data = await response.json();
     charlas = data.charlas;
@@ -30,9 +31,9 @@ const consumirDatos = async () => {
 const renderCharlas = (e) => {
     let diaSeleccionado;
 
-    if(e == undefined){
+    if (e == undefined) {
         diaSeleccionado = 'Lunes';
-    }else{
+    } else {
         desactiveAllButtons();
         e.target.classList.add('buttonActive');
         diaSeleccionado = e.target.textContent;
@@ -45,13 +46,13 @@ const renderCharlas = (e) => {
 
     charlasSeleccionadas.forEach(charla => {
         /* DESECTRUCTURACIÓN */
-        const {hora, titulo, ponente, subtitulo, descripcion, ubicacion} = charla;
+        const { hora, titulo, ponente, puesto, descripcion, ubicacion } = charla;
         const $charla = /* html */
             ` <article class="charlas">
                     <p class="charlas_hora">${hora}</p>
                     <h3 class="charlas_title">${titulo}</h3>
                     <h4 class="charlas_ponente">${ponente}</h4>
-                    <p class="charlas_subtitle">${subtitulo}</p>
+                    <p class="charlas_subtitle">${puesto}</p>
                     <p class="charlas_description">${descripcion}</p>
                     <p class="charlas_ubicacion">📍 ${ubicacion}</p>
                 </article>`;
@@ -82,10 +83,23 @@ const renderTime = () => {
     setInterval(tiempoFaltante, 1000);
 };
 
+const consumirAgenda = async ()  => {
+    console.log('Consumiendo...')
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbzlHXMK5RsMRl4a4SPBjovEeCQfmfnCDF5VgQ5pl8QYYQLUoOZp2WPiwV_iaICXlZLqGQ/exec';
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            charlas = data;
+            renderCharlas();
+        } catch (error) {
+            console.error("Error obteniendo los datos:", error);
+        }
+}
+
 
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
-document.addEventListener('DOMContentLoaded', consumirDatos);
+document.addEventListener('DOMContentLoaded', consumirAgenda);
 
 document.addEventListener('DOMContentLoaded', renderTime)
