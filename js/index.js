@@ -100,6 +100,6 @@ const consumirAgenda = async ()  => {
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
-document.addEventListener('DOMContentLoaded', consumirAgenda);
+/* document.addEventListener('DOMContentLoaded', consumirAgenda); */
 
 document.addEventListener('DOMContentLoaded', renderTime)
