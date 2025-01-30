@@ -1,6 +1,6 @@
 /* VARIABLES GLOBALES */
 :root{
-    --colorEnfasis: #EA374C;
+    --colorEnfasis: #C02F36;
     --colorDark: #121212;
     --colorBackgroundButtons: #16171A;
     --colorLigth: #CCCED1;
@@ -155,6 +155,10 @@ u{
     gap: 2em;
     align-items: center;
     padding-top: 100px;
+}
+
+.bienvenida_logo {
+    max-width: 700px;
 }
 
 .bienvenida_title {
