@@ -262,7 +262,7 @@ u{
     padding: 1em;
     width: 100%;
     border-radius: var(--radiusSmall);
-    max-width: 150px;
+    max-width: 180px;
     transition-duration: .3s;
     transition-duration: scale, background-color, box-shadow,  border-color;
 }

@@ -32,7 +32,7 @@ const renderCharlas = (e) => {
     let diaSeleccionado;
 
     if (e == undefined) {
-        diaSeleccionado = 'Lunes';
+        diaSeleccionado = 'Martes';
     } else {
         desactiveAllButtons();
         e.target.classList.add('buttonActive');
