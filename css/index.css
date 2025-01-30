@@ -331,6 +331,7 @@ u{
     padding: 1em;
     background-color: #16171A;
     border-radius: var(--radiusBig);
+    width: 100%;
 }
 
 
