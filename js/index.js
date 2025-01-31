@@ -84,22 +84,31 @@ const renderTime = () => {
 };
 
 const consumirAgenda = async ()  => {
-    console.log('Consumiendo...')
+    renderLoader();
     const apiUrl = 'https://script.google.com/macros/s/AKfycbzlHXMK5RsMRl4a4SPBjovEeCQfmfnCDF5VgQ5pl8QYYQLUoOZp2WPiwV_iaICXlZLqGQ/exec';
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
             charlas = data;
             renderCharlas();
+            removeLoader();
         } catch (error) {
             console.error("Error obteniendo los datos:", error);
         }
 }
 
+const renderLoader = () => {
+    const $loader = '<span id="loader" class="loader"></span>';
+    $charlas.innerHTML = $loader;
+}
+
+const removeLoader = () => {
+    document.querySelector('#loader').remove();
+}
 
 /* EVENTOS */
 document.addEventListener('DOMContentLoaded', addEventButtons);
 
 document.addEventListener('DOMContentLoaded', consumirAgenda);
 
-document.addEventListener('DOMContentLoaded', renderTime)
+document.addEventListener('DOMContentLoaded', renderTime);
