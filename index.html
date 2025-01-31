@@ -21,7 +21,7 @@
 <body>
 
     <!-- PARTICLES -->
-    <div id="particles-js"></div>
+    <div id="canvas-container"></div>
 
 
     <!-- HEADER -->
@@ -43,8 +43,8 @@
         <section id="inicio" class="bienvenida">
             <img class="bienvenida_logo" src="img/logoEvento.svg" alt="">
             <!-- <h1 class="bienvenida_title">5to Encuentro de <br> <span>Ingenierias UPAEP</span></h1> -->
-            <p class="bienvenida_description">Este evento es una oportunidad para aprender de líderes en la industria y
-                adentrarte en la emocionante y siempre cambiante disciplina de la ingeniería.</p>
+            <!-- <p class="bienvenida_description">Este evento es una oportunidad para aprender de líderes en la industria y
+                adentrarte en la emocionante y siempre cambiante disciplina de la ingeniería.</p> -->
 
             <div class="bienvenida_flex">
                 <div class="reloj">
@@ -240,11 +240,20 @@
 
 
 
-
+    <!-- PARTICLES -->
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js" crossorigin="anonymous" defer></script>
+    <script type="importmap" defer>
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/",
+        "simplex-noise": "https://cdn.jsdelivr.net/npm/simplex-noise@3.0.0/+esm"
+      }
+    }
+    </script>
     <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/7b35ff6dce.js" crossorigin="anonymous" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
-    <script src="js/particles.js" defer></script>
+    <script src="js/particle.js" type="module"></script>
     <script src="js/index.js" defer></script>
 </body>
 
