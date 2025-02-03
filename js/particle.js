@@ -27,9 +27,9 @@ const waves = new THREE.Points(
     geometry,
     new THREE.PointsMaterial({
         size: 0.02,
-        color: 0xffffff,  // Blanco en HEX
+        color: 0x2757AB,  // Blanco en HEX
         transparent: true,
-        opacity: 0.18      // 50% de transparencia
+        opacity: 1      // 50% de transparencia
     })
 );
 waves.rotation.x = -Math.PI / 2;
