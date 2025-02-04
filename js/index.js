@@ -25,7 +25,7 @@ const renderCharlas = (e) => {
     let diaSeleccionado;
 
     if (e == undefined) {
-        diaSeleccionado = 'Martes';
+        diaSeleccionado = 'Martes 11';
     } else {
         desactiveAllButtons();
         e.target.classList.add('buttonActive');
