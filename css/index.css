@@ -268,6 +268,10 @@ u{
     margin: 0 auto;
 }
 
+.programa_description--advertencia {
+    font-size: 12px;
+}
+
 .programa_botonera{
     display: flex;
     gap: 2em;
