@@ -57,6 +57,12 @@ const renderCharlas = (e) => {
 const tiempoFaltante = () => {
     const ahora = new Date();
     const objetivo = new Date("2025-03-11T07:00:00");
+
+    /* 9:OO AM */
+    objetivo.setHours(9);
+    objetivo.setMinutes(0);
+    objetivo.setSeconds(0);
+
     const diferencia = objetivo - ahora;
 
     if (diferencia <= 0) return;
