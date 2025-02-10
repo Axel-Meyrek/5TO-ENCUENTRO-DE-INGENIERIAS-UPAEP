@@ -314,7 +314,8 @@ u{
 }
 
 .charlas{
-    background-color: #02092D;
+    background-color: #02092da9;
+    backdrop-filter: blur(4px);
     padding: 2em;
     border-radius: var(--radiusBig);
     display: flex;
