@@ -38,20 +38,35 @@ const renderCharlas = (e) => {
     $charlas.innerHTML = '';
 
     charlasSeleccionadas.forEach(charla => {
-        /* DESECTRUCTURACIÓN */
-        const { hora, titulo, ponente, puesto, descripcion, ubicacion } = charla;
-        const $charla = /* html */
-            ` <article class="charlas">
-                    <p class="charlas_hora">${hora}</p>
-                    <h3 class="charlas_title">${titulo}</h3>
-                    <h4 class="charlas_ponente">${ponente}</h4>
-                    <p class="charlas_subtitle">${puesto}</p>
-                    <p class="charlas_description">${descripcion}</p>
-                    <p class="charlas_ubicacion">📍 ${ubicacion}</p>
-                </article>`;
-
-        $charlas.innerHTML += $charla;
+        const { hora, titulo, ponente, puesto, descripcion, ubicacion, tipo } = charla;
+        if(tipo == 'Coloquio') $charlas.innerHTML += CharlaColoquio(hora, titulo, ponente, puesto, descripcion, ubicacion, tipo);
+        else $charlas.innerHTML += Charla(hora, titulo, ponente, puesto, descripcion, ubicacion);
     });
+}
+
+const Charla = (hora, titulo, ponente, puesto, descripcion, ubicacion) => {
+    return `<article class="charlas">
+                <p class="charlas_hora">${hora}</p>
+                <h3 class="charlas_title">${titulo}</h3>
+                <h4 class="charlas_ponente">${ponente}</h4>
+                <p class="charlas_subtitle">${puesto}</p>
+                <p class="charlas_description">${descripcion}</p>
+                <p class="charlas_ubicacion">📍 ${ubicacion}</p>
+            </article>`;
+}
+
+const CharlaColoquio = (hora, titulo, ponente, puesto, descripcion, ubicacion, tipo) => {
+    return `<article class="charlas">
+                <p class="charlas_hora">${hora}</p>
+                <h3 class="charlas_title">${titulo}</h3>
+                <h4 class="charlas_ponente">${ponente}</h4>
+                <p class="charlas_subtitle">${puesto}</p>
+                <p class="charlas_description">${descripcion}</p>
+                <div class="charlas_flex">
+                    <p class="charlas_ubicacion">📍 ${ubicacion}</p>
+                    <p>🎓 ${tipo}</p>
+                </div>
+            </article>`;
 }
 
 const tiempoFaltante = () => {
