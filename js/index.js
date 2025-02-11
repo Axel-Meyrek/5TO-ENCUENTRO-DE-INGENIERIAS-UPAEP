@@ -64,7 +64,7 @@ const CharlaColoquio = (hora, titulo, ponente, puesto, descripcion, ubicacion, t
                 <p class="charlas_description">${descripcion}</p>
                 <div class="charlas_flex">
                     <p class="charlas_ubicacion">📍 ${ubicacion}</p>
-                    <p>🎓 ${tipo}</p>
+                    <p class="charlas_coloquio">${tipo}</p>
                 </div>
             </article>`;
 }

@@ -374,6 +374,13 @@ u{
     align-items: center;
 }
 
+.charlas_coloquio {
+    background-color: var(--colorEnfasis);
+    border-radius: var(--radiusSmall);
+    padding: .2em 1em;
+    box-shadow: 0 0 10px var(--colorEnfasis);
+}
+
 /* PREGUNTAS FRECUENTES */
 
 
