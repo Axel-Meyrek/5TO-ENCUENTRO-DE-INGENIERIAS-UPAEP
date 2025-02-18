@@ -1,4 +1,6 @@
 /* VARIABLES Y COMPONENTES */
+/* myUndefinedFunction(); */ //ERROR INTENCIONAL
+
 let charlas = [];
 
 const $buttonDias = document.querySelectorAll('.programa_button');
