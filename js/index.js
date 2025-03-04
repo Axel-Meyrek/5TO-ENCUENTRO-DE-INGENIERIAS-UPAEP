@@ -1,6 +1,4 @@
 /* VARIABLES Y COMPONENTES */
-/* myUndefinedFunction(); */ //ERROR INTENCIONAL
-
 let charlas = [];
 
 const $buttonDias = document.querySelectorAll('.programa_button');
@@ -15,13 +13,16 @@ const $minutos = document.querySelector('#minutos');
 
 const $segundos = document.querySelector('#segundos');
 
-
 /* FUNCIONES */
-const saludar = () => console.log('Hola Mundo, yo soy Axel Meyrek');
+const saludar = () => console.log('Hola Mundo');
 
 const addEventButtons = () => $buttonDias.forEach(button => button.addEventListener('click', renderCharlas));
 
 const desactiveAllButtons = () => $buttonDias.forEach(button => button.classList.remove('buttonActive'));
+
+const saveCharlasCache = () => localStorage.setItem('charlas', JSON.stringify(charlas));
+
+const getCache = () => charlas = JSON.parse(localStorage.getItem('charlas'));
 
 const renderCharlas = (e) => {
     let diaSeleccionado;
@@ -101,8 +102,6 @@ const renderTime = () => {
 };
 
 const consumirAgenda = async ()  => {
-
-    console.log('Consumiendo');
     renderLoader();
 
     const apiUrl = 'https://script.google.com/macros/s/AKfycbzlHXMK5RsMRl4a4SPBjovEeCQfmfnCDF5VgQ5pl8QYYQLUoOZp2WPiwV_iaICXlZLqGQ/exec';
@@ -111,7 +110,10 @@ const consumirAgenda = async ()  => {
         const response = await fetch(apiUrl);
         const data = await response.json();
         charlas = data;
+
         renderCharlas();
+
+        saveCharlasCache();
     } catch (error) {
         console.error("Error obteniendo los datos:", error);
     }
@@ -122,12 +124,47 @@ const renderLoader = () => {
     $charlas.innerHTML = $loader;
 }
 
+const saveTimeStamp = () =>  {
+    const hoy = new Date();
+
+    const lastSaved = hoy.toDateString();
+    
+    localStorage.setItem('lastSaved', lastSaved);
+}
+
+const verifyCache = () => {
+
+    if(localStorage.getItem('lastSaved') ===  null || localStorage.getItem('charlas') == null){
+
+        consumirAgenda();
+        
+        saveTimeStamp();
+        
+        return;
+    }
+    
+    lastSaved = localStorage.getItem('lastSaved');
+    
+    const hoy = new Date();
+    
+    if (lastSaved === hoy.toDateString()) {
+        
+        getCache();
+        
+        renderCharlas();
+        
+        return;
+    }
+    
+    console.log(3)
+    consumirAgenda();
+
+    saveTimeStamp();
+}
+
 /* EVENTOS */
+addEventButtons();
 
-document.addEventListener('DOMContentLoaded', addEventButtons);
+renderTime();
 
-document.addEventListener('DOMContentLoaded', consumirAgenda);
-
-document.addEventListener('DOMContentLoaded', renderTime);
-
-document.addEventListener('DOMContentLoaded', saludar);
+verifyCache();
